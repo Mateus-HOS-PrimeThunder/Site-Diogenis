@@ -17,7 +17,7 @@ function cadastrar() {
         imc: IMC(document.getElementById('peso').value, document.getElementById('altura').value),
 
         categoriaDoImc: categoriaIMC(IMC(document.getElementById('peso').value, document.getElementById('altura').value)),
-       
+        Bcor: Mudarcor(), 
     }
     arreyIMC.push(resultadoIMC)
 
@@ -32,7 +32,6 @@ function imprimir(){
     cards.innerHTML = '';
 
     for (let i = 0; i < arreyIMC.length; i++) {
-            corDoCard.style.backgroundColor = Mudarcor();
             div.innerHTML = `
         
             <p>Peso: ${arreyIMC[i].peso} KG</p>
@@ -41,14 +40,14 @@ function imprimir(){
             <p>IMC: ${arreyIMC[i].imc.toFixed(2)}</p>
             <p>Categoria do IMC: ${arreyIMC[i].categoriaDoImc}</p>
            
-        
+
       
         `;
         
 
         cards.innerHTML += `
       <div class="col py-2">
-          <div class="card" id="cor"  style="background-color:${Mudarcor()}";>
+          <div class="card" id="cor"  style="background-color:${arreyIMC[i].Bcor}";>
               <div class="card-body">
                   <h5 class="card-title">${arreyIMC[i].nome} ${arreyIMC[i].sobrenome}</h5>
                   <p class="card-text">${div.innerHTML}</p>
@@ -86,13 +85,13 @@ function Mudarcor(){
       cor =  IMC(document.getElementById('peso').value, document.getElementById('altura').value);
       console.log(cor)
     if (cor <= 18.5) {
-        return"yellow";
+        return 'yellow';
           
       } else if (cor <= 24.9) {
-          return"green";
+          return 'green';
           
       } else {
-          return"red";
+          return 'red';
           
       }
 }
