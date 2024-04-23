@@ -1,0 +1,197 @@
+img {
+    height: 100%;
+    width: 100%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-color: #000636;
+  box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+  align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 1px 40px;
+}
+
+.logo {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.login-button button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #0202d5;
+}
+
+.login-button button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.login-button button:hover {
+  background-color: #4e4eff;
+  color: #ffffff;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+ 
+  
+}
+
+/* tamanho das imgs */
+.myIMG {
+  height: 255px;
+  width: 255px;
+}
+/* vs start */
+.title {
+  padding-inline: 30%;
+  padding-top: 5%;
+}
+
+.vsnome {
+  text-align: center;
+} 
+.vsCode {
+  margin-top: 5%;
+  display: flex;
+}
+
+.DescVs {
+  flex: 1;
+  text-align: justify;
+}
+.IMGvs {
+  flex: 1;
+  margin-left: 25%;
+}
+/* vs end */
+/* btns start */
+.buttonvs {
+  display: flex;
+  justify-content: center;
+   padding-bottom: 5%; 
+  
+}
+
+.buttonvs a {
+  border: none;
+  /* padding: 10px 15px; */
+  border-radius: 10px;
+}
+
+.buttonvs a button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #0202d5;
+  color: #fff;
+}
+/* btns end */
+
+/* eclipse start */
+.Eclipsenome {
+  text-align: center;
+}
+.eclipse {
+  margin-top: 5%;
+  display: flex;
+}
+
+.DescEclipse {
+  flex: 1; 
+  text-align: justify;
+}
+.IMGeclipse {
+  flex: 1;
+  margin-left: 25%;
+}
+/* eclipse end */
+
+/* yog start */
+.mysqlyog {
+  margin-top: 5%;
+  display: flex;
+}
+.DescSqlYog {
+  flex: 1;
+  text-align: justify;
+}
+.IMGSqlYog {
+  flex: 1;
+  margin-left: 25%;
+}
+
+/* yog end */
+
+/* work start */
+.mysqlwork {
+  margin-top: 5%;
+  display: flex;
+}
+
+.DescSQLWork {
+  flex: 1;
+  text-align: justify;
+}
+.IMGSqlWork {
+  flex: 1;
+  margin-left: 25%;
+}
+
+.SQLWnome {
+  text-align: center;
+}
+
+/* work end */
+
+
+#cor{
+  background-color: none;
+}
