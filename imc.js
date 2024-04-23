@@ -17,22 +17,22 @@ function cadastrar() {
         imc: IMC(document.getElementById('peso').value, document.getElementById('altura').value),
 
         categoriaDoImc: categoriaIMC(IMC(document.getElementById('peso').value, document.getElementById('altura').value)),
+       
     }
-
     arreyIMC.push(resultadoIMC)
 
     console.log(arreyIMC)
-
-
-
+    console.log(Mudarcor())
+    
     imprimir()
 }
 
 function imprimir(){
     div.innerHTML = '';
     cards.innerHTML = '';
-    
+
     for (let i = 0; i < arreyIMC.length; i++) {
+            corDoCard.style.backgroundColor = Mudarcor();
             div.innerHTML = `
         
             <p>Peso: ${arreyIMC[i].peso} KG</p>
@@ -48,7 +48,7 @@ function imprimir(){
 
         cards.innerHTML += `
       <div class="col py-2">
-          <div class="card " id="cor">
+          <div class="card" id="cor"  style="background-color:${Mudarcor()}";>
               <div class="card-body">
                   <h5 class="card-title">${arreyIMC[i].nome} ${arreyIMC[i].sobrenome}</h5>
                   <p class="card-text">${div.innerHTML}</p>
@@ -65,6 +65,7 @@ function IMC(peso, altura) {
 
 function categoriaIMC(imc) {
 
+    
     if (imc <= 18.5) {
         return 'Abaixo do normal' 
     } else if (imc <= 24.9) {
@@ -78,20 +79,24 @@ function categoriaIMC(imc) {
     } else {
         return 'Obesidade Grau III'
     }
+    
 }
 
-
-
-function Cor(corDoCard) {
-
-    if (corDoCard <= 18.5) {
-       return "yelow"; 
-    } else if (corDoCard <= 24.9) {
-        return "green";
-    } else if (corDoCard >= 29.9) {
-        return "red";
-    }
+function Mudarcor(){
+      cor =  IMC(document.getElementById('peso').value, document.getElementById('altura').value);
+      console.log(cor)
+    if (cor <= 18.5) {
+        return"yellow";
+          
+      } else if (cor <= 24.9) {
+          return"green";
+          
+      } else {
+          return"red";
+          
+      }
 }
+
 
 
 
