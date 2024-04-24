@@ -85,13 +85,13 @@ function Mudarcor(){
       cor =  IMC(document.getElementById('peso').value, document.getElementById('altura').value);
       console.log(cor)
     if (cor <= 18.5) {
-        return 'yellow';
+        return '#f87021';
           
       } else if (cor <= 24.9) {
-          return 'green';
+          return '#067020';
           
       } else {
-          return 'red';
+          return '#DC143C';
           
       }
 }

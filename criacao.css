@@ -1,7 +1,8 @@
 img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
 
 * {
@@ -80,8 +81,10 @@ header {
 }
 
 @media screen and (max-width: 768px) {
- 
-  
+  #image {
+    background-image: none;
+  }
+
 }
 
 /* tamanho das imgs */
@@ -89,6 +92,7 @@ header {
   height: 255px;
   width: 255px;
 }
+
 /* vs start */
 .title {
   padding-inline: 30%;
@@ -97,7 +101,8 @@ header {
 
 .vsnome {
   text-align: center;
-} 
+}
+
 .vsCode {
   margin-top: 5%;
   display: flex;
@@ -107,17 +112,19 @@ header {
   flex: 1;
   text-align: justify;
 }
+
 .IMGvs {
   flex: 1;
   margin-left: 25%;
 }
+
 /* vs end */
 /* btns start */
 .buttonvs {
   display: flex;
   justify-content: center;
-   padding-bottom: 5%; 
-  
+  padding-bottom: 5%;
+
 }
 
 .buttonvs a {
@@ -133,25 +140,29 @@ header {
   background-color: #0202d5;
   color: #fff;
 }
+
 /* btns end */
 
 /* eclipse start */
 .Eclipsenome {
   text-align: center;
 }
+
 .eclipse {
   margin-top: 5%;
   display: flex;
 }
 
 .DescEclipse {
-  flex: 1; 
+  flex: 1;
   text-align: justify;
 }
+
 .IMGeclipse {
   flex: 1;
   margin-left: 25%;
 }
+
 /* eclipse end */
 
 /* yog start */
@@ -159,10 +170,12 @@ header {
   margin-top: 5%;
   display: flex;
 }
+
 .DescSqlYog {
   flex: 1;
   text-align: justify;
 }
+
 .IMGSqlYog {
   flex: 1;
   margin-left: 25%;
@@ -180,6 +193,7 @@ header {
   flex: 1;
   text-align: justify;
 }
+
 .IMGSqlWork {
   flex: 1;
   margin-left: 25%;
@@ -192,6 +206,11 @@ header {
 /* work end */
 
 
-#cor{
-  background-color: none;
+#cabecaCard {
+  background-color: #DC143C;
+  color: #fff;
+}
+
+#cor {
+  color: #fff;
 }
