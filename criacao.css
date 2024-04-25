@@ -214,3 +214,22 @@ header {
 #cor {
   color: #fff;
 }
+
+
+.quadrado {
+  width: 100%;
+  padding-top: 10%;
+  background-color: #1a1d1b;
+  position: relative;
+}
+
+
+.conteudo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+
+}
