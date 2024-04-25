@@ -67,7 +67,7 @@ function imprimir(){
             <p>Sexo: ${arrey[i].sexo}</p>
             <p>Peso: ${arrey[i].peso} KG</p>
             <p>Altura: ${arrey[i].altura} M</p>
-            <p>TBM: ${arrey[i].tbm.toFixed(2)}</p>
+            <p>TMB: ${arrey[i].tbm.toFixed(2)}</p>
             <p>Carboidratos: ${arrey[i].carbo.toFixed(2)} g</p>
             <p>Proteina: ${arrey[i].proteina.toFixed(2)} g</p>
             <p>Gordura: ${arrey[i].gordura.toFixed(2)} g</p>
