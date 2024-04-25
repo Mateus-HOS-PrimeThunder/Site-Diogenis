@@ -34,11 +34,11 @@ function imprimir(){
     for (let i = 0; i < arreyIMC.length; i++) {
             div.innerHTML = `
         
-            <p>Peso: ${arreyIMC[i].peso} KG</p>
-            <p>Altura: ${arreyIMC[i].altura} M</p>
-            <p>Categoria: ${arreyIMC[i].categoria}</p>
-            <p>IMC: ${arreyIMC[i].imc.toFixed(2)}</p>
-            <p>Categoria do IMC: ${arreyIMC[i].categoriaDoImc}</p>
+            <p>Peso: ${arreyIMC[i].peso} KG<br>
+            Altura: ${arreyIMC[i].altura} M<br>
+            Categoria: ${arreyIMC[i].categoria}<br>
+            IMC: ${arreyIMC[i].imc.toFixed(2)}<br>
+            Categoria do IMC: ${arreyIMC[i].categoriaDoImc}</p>
            
 
       

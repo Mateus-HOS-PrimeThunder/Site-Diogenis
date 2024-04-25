@@ -63,14 +63,14 @@ function imprimir(){
     for (let i = 0; i < arrey.length; i++) {
             div.innerHTML = `
         
-            <p>Idade: ${arrey[i].idade} anos</p>
-            <p>Sexo: ${arrey[i].sexo}</p>
-            <p>Peso: ${arrey[i].peso} KG</p>
-            <p>Altura: ${arrey[i].altura} M</p>
-            <p>TMB: ${arrey[i].tbm.toFixed(2)}</p>
-            <p>Carboidratos: ${arrey[i].carbo.toFixed(2)} g</p>
-            <p>Proteina: ${arrey[i].proteina.toFixed(2)} g</p>
-            <p>Gordura: ${arrey[i].gordura.toFixed(2)} g</p>
+            <p>Idade: ${arrey[i].idade} anos<br>
+            Sexo: ${arrey[i].sexo}<br>
+            Peso: ${arrey[i].peso} KG<br>
+            Altura: ${arrey[i].altura} M<br>
+            TMB: ${arrey[i].tbm.toFixed(2)}<br>
+            Carboidratos: ${arrey[i].carbo.toFixed(2)} g<br>
+            Proteina: ${arrey[i].proteina.toFixed(2)} g<br>
+            Gordura: ${arrey[i].gordura.toFixed(2)} g</p>
         
       
         `;
